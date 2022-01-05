@@ -4,11 +4,11 @@ from mangum import Mangum
 app = FastAPI()
 
 @app.get("/")
-def orchtel_home():
+def fastapi_home():
     return {"Welcome to": "lambda function"}
 
-@app.get("/ab")
-def ab_home():
-    return {"Welcome to": "AB's lambda function"}
+@app.get("/dhruval")
+def dhruval_home():
+    return {"Welcome to": "dhruval's lambda function"}
 
 handler = Mangum(app = app)
